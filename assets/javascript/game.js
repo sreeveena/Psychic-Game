@@ -19,6 +19,10 @@
       //generating a random number and picking an element in the array
       var computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)];
 
+      winsText.textContent = "Wins : " + wins;
+      lossesText.textContent = "Losses : " + losses;
+      guessesText.textContent = "Guesses Left : " + guessesLeft;
+      userText.textContent = "Your Guesses so far : " + userPastGuess ;
       
       // This function will run when ever a user presses a key on the keyboard
       document.onkeyup = function(event) {
