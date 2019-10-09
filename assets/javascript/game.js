@@ -23,7 +23,7 @@
       lossesText.textContent = "Losses : " + losses;
       guessesText.textContent = "Guesses Left : " + guessesLeft;
       userText.textContent = "Your Guesses so far : " + userPastGuess ;
-      
+
       // This function will run when ever a user presses a key on the keyboard
       document.onkeyup = function(event) {
       
@@ -51,9 +51,12 @@
       }else{
          guessesLeft--;
       }
-      //
+      //reset the values upon failed guesses
       if(guessesLeft == 0){
          losses++;
+         guessesLeft = 9;
+         userPastGuess = "";
+         computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)];
       }
       console.log("Your Guesses so far : " + userGuess);
       console.log("Computer guess:" + computerGuess);
