@@ -58,12 +58,12 @@
          userPastGuess = "";
          computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)];
       }
-      console.log("Your Guesses so far : " + userGuess);
-      console.log("Computer guess:" + computerGuess);
-      console.log("Wins: " + wins);
-      console.log("Losses:" + losses);
-      console.log("Guesses Left: " + guessesLeft);
-      console.log("Past Guess: " + userPastGuess);
+      // console.log("Your Guesses so far : " + userGuess);
+      // console.log("Computer guess:" + computerGuess);
+      // console.log("Wins: " + wins);
+      // console.log("Losses:" + losses);
+      // console.log("Guesses Left: " + guessesLeft);
+      // console.log("Past Guess: " + userPastGuess);
 
       
       winsText.textContent = "Wins : " + wins;
