@@ -83,3 +83,9 @@ document.onkeyup = function(event) {
 screenshot of the page
 index.html
 
+![image](https://user-images.githubusercontent.com/7834767/66525576-b8f64d00-eaaa-11e9-9a66-aaa5df49c15b.png)
+
+
+![image](https://user-images.githubusercontent.com/7834767/66525610-da573900-eaaa-11e9-8d90-6762b2e91453.png)
+
+![image](https://user-images.githubusercontent.com/7834767/66525712-3326d180-eaab-11e9-9802-a896e2359b5b.png)
