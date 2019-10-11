@@ -22,7 +22,14 @@
       winsText.textContent = "Wins : " + wins;
       lossesText.textContent = "Losses : " + losses;
       guessesText.textContent = "Guesses Left : " + guessesLeft;
-      userText.textContent = "Your Guesses so far : " + userPastGuess ;
+      userText.textContent = "Your Guesses so far : " + userPastGuess;
+
+      // This function is to set user past guess to null, reset the guessesleft and random coputerGuess.
+      function display(){
+         userPastGuess = "";
+         guessesLeft = 9;
+         computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)];
+      };
 
       // This function will run when ever a user presses a key on the keyboard
       document.onkeyup = function(event) {
@@ -44,22 +51,17 @@
       if( userGuess == computerGuess)
       {
          wins++;
-         userPastGuess = "";
-         guessesLeft = 9;
-         computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)];
-
+         display();
       }else{
          guessesLeft--;
       }
       //reset the values upon failed guesses
       if(guessesLeft == 0){
          losses++;
-         guessesLeft = 9;
-         userPastGuess = "";
-         computerGuess = computerChoices[Math.floor(Math.random()* computerChoices.length)];
+         display();
       }
       // console.log("Your Guesses so far : " + userGuess);
-      // console.log("Computer guess:" + computerGuess);
+      console.log("Computer guess:" + computerGuess);
       // console.log("Wins: " + wins);
       // console.log("Losses:" + losses);
       // console.log("Guesses Left: " + guessesLeft);
