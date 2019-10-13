@@ -46,15 +46,27 @@
       if(userPastGuess == ""){
          userPastGuess =  userGuess;
       }else{
-         userPastGuess = userPastGuess +" , "+ userGuess;
+         // comparing the past guesses with the present letter
+         if(userPastGuess.includes(userGuess)){
+            alert(userGuess + " " + " already guessed. Try again!");
+            return;
+          }else{
+            userPastGuess = userPastGuess +" , "+ userGuess;
+          }
+         
       }
-       
+
+      // if(userPastGuess==userGuess){
+      //    alert(userGuess + "already used");
+      // }
+      
       //comparing the user guess with computer guess and modifying the values
       if( userGuess == computerGuess)
       {
          wins++;
          display();
       }else{
+         
          guessesLeft--;
       }
       //reset the values upon failed guesses
