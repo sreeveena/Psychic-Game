@@ -40,6 +40,8 @@
       // making the user guess to lowercase
       userGuess = userGuess.toLowerCase(); 
 
+      // if(userPastGuess == userGuess){}
+
       // checking if the user past guess was empty before concatenating
       if(userPastGuess == ""){
          userPastGuess =  userGuess;

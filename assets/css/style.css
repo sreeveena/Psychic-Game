@@ -3,3 +3,12 @@ h1{
     font-weight: bold;
     font-size: 1.5em;
 }
+/* body background */
+body{
+    background: url("../images/psychic-ability.jpg") no-repeat;
+    background-size: 760px 500px;
+    width: 760px;
+    height: 500px;
+    color: white;
+    padding: 10px;
+}
