@@ -48,7 +48,7 @@
       }else{
          // comparing the past guesses with the present letter
          if(userPastGuess.includes(userGuess)){
-            alert(userGuess + " " + " already guessed. Try again!");
+            //alert(userGuess + " " + " already guessed. Try again!");
             return;
           }else{
             userPastGuess = userPastGuess +" , "+ userGuess;
